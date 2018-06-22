@@ -8,7 +8,6 @@ export function urlParse() {
   let obj = {};
   let reg = /[?&][^?&]+=[^?&]+/g;
   let arr = url.match(reg);
-  // ['?id=12345', '&a=b']
   if (arr) {
     arr.forEach((item) => {
       let tempArr = item.substring(1).split('=');
