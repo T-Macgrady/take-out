@@ -5,7 +5,8 @@ import ratings from 'components/ratings/ratings';
 import seller from 'components/seller/seller';
 
 Vue.use(Router);
-//首页redirect至goods
+
+/*首页redirect至goods*/
 const routes = [{
   path: '/',
   redirect: '/goods'
