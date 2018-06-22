@@ -94,7 +94,7 @@
     created() {
       this.classMap = ['decrease', 'discount', 'special', 'invoice', 'guarantee'];
 
-      const url = debug ? '/api/goods' : '/take-out/static/data/goods.json';
+      const url = debug ? '/api/goods' : '/api/goods.json';
       this.$http.get(url).then((response) => {
         response = response.body;
         if (response.errno === ERR_OK) {

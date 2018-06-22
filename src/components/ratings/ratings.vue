@@ -80,7 +80,7 @@
       };
     },
     created() {
-      const url = debug ? '/api/ratings' : '/take-out/static/data/ratings.json';
+      const url = debug ? '/api/ratings' : '/api/ratings.json';
       this.$http.get(url).then((response) => {
         response = response.body;
         if (response.errno === ERR_OK) {
