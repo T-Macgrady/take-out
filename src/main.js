@@ -4,6 +4,7 @@ import App from './App';
 import router from './router/index.js';
 
 import 'common/stylus/index.styl';
+import 'static/css/reset.css';
 
 Vue.use(VueResource);
 

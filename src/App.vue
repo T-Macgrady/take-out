@@ -37,7 +37,7 @@
       };
     },
     created() {
-      const url = debug ? '/api/seller' : 'http://ustbhuangyi.com/sell/api/seller';
+      const url = debug ? '/api/seller' : '/take-out/static/data/seller.json';
       this.$http.get(url + '?id=' + this.seller.id).then((response) => {
         response = response.body;
         if (response.errno === ERR_OK) {
